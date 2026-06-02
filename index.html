@@ -1,1 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maria Voskanyan | Shopify Designer & Pharmacovigilance Specialist</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--bg:#faf7f2;
+--card:#ffffff;
+--gold:#c8a97e;
+--dark:#232323;
+--text:#555;
+--shadow:0 15px 40px rgba(0,0,0,.08);
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:var(--bg);
+color:var(--dark);
+line-height:1.7;
+}
+
+.container{
+width:min(1200px,90%);
+margin:auto;
+}
+
+header{
+min-height:100vh;
+display:flex;
+align-items:center;
+background:
+linear-gradient(rgba(250,247,242,.88),rgba(250,247,242,.88)),
+url("https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=1800&q=80");
+background-size:cover;
+background-position:center;
+}
+
+.hero{
+max-width:800px;
+}
+
+.badge{
+display:inline-block;
+padding:8px 18px;
+border:1px solid var(--gold);
+border-radius:50px;
+color:var(--gold);
+font-size:.9rem;
+margin-bottom:25px;
+}
+
+h1{
+font-family:'Cormorant Garamond',serif;
+font-size:5rem;
+font-weight:600;
+line-height:1;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:1.15rem;
+color:var(--text);
+max-width:650px;
+margin-bottom:35px;
+}
+
+.btns{
+display:flex;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:14px 28px;
+text-decoration:none;
+border-radius:50px;
+transition:.3s;
+font-weight:500;
+}
+
+.btn-primary{
+background:var(--gold);
+color:white;
+}
+
+.btn-primary:hover{
+transform:translateY(-3px);
+}
+
+.btn-outline{
+border:1px solid var(--gold);
+color:var(--gold);
+}
+
+section{
+padding:100px 0;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:60px;
+}
+
+.section-title h2{
+font-family:'Cormorant Garamond',serif;
+font-size:3rem;
+margin-bottom:10px;
+}
+
+.section-title p{
+color:var(--text);
+}
+
+.about-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+}
+
+.card{
+background:var(--card);
+padding:35px;
+border-radius:25px;
+box-shadow:var(--shadow);
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.skill-card{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:var(--shadow);
+}
+
+.skill-card h3{
+margin-bottom:15px;
+color:var(--gold);
+}
+
+.portfolio-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:30px;
+}
+
+.project{
+background:white;
+border-radius:25px;
+overflow:hidden;
+box-shadow:var(--shadow);
+transition:.3s;
+}
+
+.project:hover{
+transform:translateY(-8px);
+}
+
+.project img{
+width:100%;
+height:240px;
+object-fit:cover;
+}
+
+.project-content{
+padding:25px;
+}
+
+.project-content h3{
+margin-bottom:10px;
+}
+
+.timeline{
+display:grid;
+gap:25px;
+}
+
+.job{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:var(--shadow);
+}
+
+.job h3{
+margin-bottom:8px;
+}
+
+.job span{
+color:var(--gold);
+font-size:.95rem;
+}
+
+.contact{
+text-align:center;
+}
+
+.contact-links{
+display:flex;
+justify-content:center;
+gap:20px;
+margin-top:30px;
+flex-wrap:wrap;
+}
+
+.contact-links a{
+text-decoration:none;
+padding:14px 25px;
+background:white;
+border-radius:50px;
+color:var(--dark);
+box-shadow:var(--shadow);
+}
+
+footer{
+padding:40px;
+text-align:center;
+color:#777;
+}
+
+@media(max-width:768px){
+
+h1{
+font-size:3.2rem;
+}
+
+.about-grid{
+grid-template-columns:1fr;
+}
+
+section{
+padding:80px 0;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<div class="container">
+<div class="hero">
+
+<div class="badge">
+Shopify Designer • Pharmacovigilance Specialist
+</div>
+
+<h1>
+Maria<br>
+Voskanyan
+</h1>
+
+<p>
+Healthcare professional with experience in pharmacovigilance,
+drug safety documentation and pharmacy operations.
+Currently specializing in Shopify design, luxury eCommerce
+experiences and custom storefront development.
+</p>
+
+<div class="btns">
+<a href="#portfolio" class="btn btn-primary">View Portfolio</a>
+<a href="#" class="btn btn-outline">Download CV</a>
+</div>
+
+</div>
+</div>
+</header>
+
+<section id="about">
+<div class="container">
+
+<div class="section-title">
+<h2>About Me</h2>
+<p>Healthcare expertise combined with modern eCommerce design</p>
+</div>
+
+<div class="about-grid">
+
+<div class="card">
+<h3>Pharmaceutical Background</h3>
+<br>
+<p>
+Experience in pharmacovigilance, PSUR preparation,
+RMP documentation, drug safety monitoring and pharmacy consulting.
+Strong understanding of healthcare products,
+patient communication and regulatory processes.
+</p>
+</div>
+
+<div class="card">
+<h3>Shopify & Digital Skills</h3>
+<br>
+<p>
+Creating premium Shopify storefronts, custom Liquid sections,
+responsive layouts, luxury product pages,
+collection pages and mobile-first shopping experiences.
+</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="skills">
+<div class="container">
+
+<div class="section-title">
+<h2>Skills</h2>
+</div>
+
+<div class="skills">
+
+<div class="skill-card">
+<h3>Shopify</h3>
+<ul>
+<li>Shopify Theme Customization</li>
+<li>Liquid</li>
+<li>HTML & CSS</li>
+<li>Responsive Design</li>
+<li>Custom Sections</li>
+<li>Store Management</li>
+</ul>
+</div>
+
+<div class="skill-card">
+<h3>Healthcare</h3>
+<ul>
+<li>Pharmacovigilance</li>
+<li>PSUR Documentation</li>
+<li>RMP Documentation</li>
+<li>Drug Safety Monitoring</li>
+<li>Pharmacy Operations</li>
+</ul>
+</div>
+
+<div class="skill-card">
+<h3>Professional</h3>
+<ul>
+<li>Problem Solving</li>
+<li>Documentation</li>
+<li>Communication</li>
+<li>Project Management</li>
+<li>Attention to Detail</li>
+</ul>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="portfolio">
+<div class="container">
+
+<div class="section-title">
+<h2>Portfolio</h2>
+<p>Recent Shopify design projects</p>
+</div>
+
+<div class="portfolio-grid">
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1200&q=80">
+<div class="project-content">
+<h3>Luxury Pearl Jewelry Store</h3>
+<p>
+Premium Shopify storefront with luxury aesthetic,
+custom hero section and mobile optimization.
+</p>
+</div>
+</div>
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=1200&q=80">
+<div class="project-content">
+<h3>Wellness eCommerce</h3>
+<p>
+Health and wellness Shopify experience with
+clean pharmaceutical-inspired design.
+</p>
+</div>
+</div>
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80">
+<div class="project-content">
+<h3>Custom Shopify Components</h3>
+<p>
+Luxury headers, product sections,
+404 pages and collection layouts.
+</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="experience">
+<div class="container">
+
+<div class="section-title">
+<h2>Experience</h2>
+</div>
+
+<div class="timeline">
+
+<div class="job">
+<h3>Pharmacovigilance Specialist</h3>
+<span>ARPIMED LLC • 2022 — 2023</span>
+<p>
+PSUR preparation, RMP documentation and safety monitoring.
+</p>
+</div>
+
+<div class="job">
+<h3>Pharmacist Consultant</h3>
+<span>Healthy Pharm • 2018 — 2020</span>
+<p>
+Patient consultation, pharmaceutical products and inventory management.
+</p>
+</div>
+
+<div class="job">
+<h3>Pharmacist Consultant</h3>
+<span>Vaga Pharm • 2017 — 2018</span>
+<p>
+Customer support, medication guidance and pharmacy operations.
+</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<div class="container">
+
+<div class="contact">
+<div class="section-title">
+<h2>Let's Work Together</h2>
+<p>
+Available for Shopify projects, eCommerce support and healthcare-related opportunities.
+</p>
+</div>
+
+<div class="contact-links">
+<a href="mailto:mnatsakanyan-maria@mail.ru">Email</a>
+<a href="#">LinkedIn</a>
+<a href="#">GitHub</a>
+<a href="#">Upwork</a>
+<a href="#">Fiverr</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 Maria Voskanyan • Shopify Designer & Pharmacovigilance Specialist
+</footer>
+
+</body>
+</html>
